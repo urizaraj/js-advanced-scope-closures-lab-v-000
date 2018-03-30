@@ -16,3 +16,12 @@ function produceTipCalculator(tip) {
     return total * tip
   }
 }
+function createDriver() {
+  let driverId = 0
+
+  return class Driver {
+    constructor() {
+      this.id = ++driverId
+    }
+  }
+}
